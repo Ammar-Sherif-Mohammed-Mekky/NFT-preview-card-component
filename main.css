@@ -137,5 +137,11 @@ body{
 
 .creator a{
     text-decoration: none;
+    transition: 0.5s;
+    color:white;
+}
+
+.creator a:hover{
     color: hsl(178, 100%, 50%);
+
 }
