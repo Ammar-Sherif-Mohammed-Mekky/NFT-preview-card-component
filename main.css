@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+*{margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background: hsl(217, 54%, 11%);
+}
+
+.all{
+    height: 510px;
+    background: hsl(216, 50%, 16%);
+    padding: 30px;
+    max-width: 370px;
+    margin: auto;
+    margin-top: 50px;
+    /* margin-top:100px;
+    margin-left:600px;
+    margin-right:400px; */
+    width: 300px;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+}
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+
+  .container:hover .main {
+      background: hsl(178, 100%, 50%);
+    opacity: 0.3;
+  }
+
+  .view {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.main{
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    height: 300px;
+    background-color: hsl(178, 100%, 50%);
+    /* height: 300px; */
+}
+
+.container:hover .view {
+    background: hsl(178, 100%, 50%);
+    opacity: 1;
+  }
+
+
+.all h2{
+    font-weight: 400;
+    margin-top: 20px;
+    color: hsl(0, 0%, 100%);
+    transition: 0.5s;
+}
+
+.all h2:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.discription{
+    line-height: 25px;
+    margin-top: 10px;
+    color: hsla(0, 0%, 100%, 0.575);
+    /* max-width: 300px; */
+    font-weight: 300;
+}
+
+.bottom{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content:space-between
+}
+
+.hr{
+    width: auto;
+    height: 0.3px;
+    background: hsl(0, 0%, 32%);
+    margin-bottom: 20px;
+}
+
+.price{
+    display: flex;
+}
+
+.pricetext{
+    color: hsl(178, 100%, 50%);
+    margin-left: 7px;
+    font-weight: 600;
+}
+
+.time{
+    display: flex;
+}
+
+.time img{
+    height: 20px;
+}
+.timetext{
+    color: hsl(215, 51%, 70%);
+    margin-left: 7px;
+    font-weight: 3600;
+}
+
+.creator{
+    display: flex;
+}
+
+.creator img{
+    margin-right: 10px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.creator h4{
+    margin-top: 5px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.creator a{
+    text-decoration: none;
+    color: hsl(178, 100%, 50%);
+}
