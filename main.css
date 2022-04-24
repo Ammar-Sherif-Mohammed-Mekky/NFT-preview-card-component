@@ -10,6 +10,171 @@ body{
 }
 
 .all{
+    height: 309px;
+    background: hsl(216, 50%, 16%);
+    padding: 30px;
+    /* max-width: 370px; */
+    margin: auto;
+    margin-top: 50px;
+    /* margin-top:100px;
+    margin-left:600px;
+    margin-right:400px; */
+    width: 866px;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+}
+
+.container {
+    border-radius: 20px;
+    position: relative;
+    width: 100%;
+  }
+
+  .container:hover .main {
+      background: hsl(178, 100%, 50%);
+    opacity: 0.3;
+  }
+
+  .view {
+      border-radius: 20px;
+      padding: 125px;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.main{
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    height: 300px;
+    background-color: hsl(178, 100%, 50%);
+    /* height: 300px; */
+}
+
+.container:hover .view {
+    background: hsl(178, 100%, 50%);
+    opacity: 1;
+  }
+
+
+
+.all h2{
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: -300px;
+    margin-left: 340px;
+    color: hsl(0, 0%, 100%);
+    transition: 0.5s;
+}
+
+.all h2:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.discription{
+    line-height: 25px;
+    margin-top: 10px;
+    max-width: 303px;
+    margin-left: 340px;
+    color: hsla(0, 0%, 100%, 0.575);
+    /* max-width: 300px; */
+    font-weight: 300;
+}
+
+.bottom{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content:space-between
+}
+
+/* .hr{
+    width: auto;
+    height: 0.3px;
+    background: hsl(0, 0%, 32%);
+    margin-bottom: 20px;
+} */
+
+.price{
+    display: flex;
+    /* margin-top: 40px; */
+    margin-left: 349px;
+}
+
+.pricetext{
+    color: hsl(178, 100%, 50%);
+    margin-left: 7px;
+    font-weight: 600;
+}
+
+.time{
+    display: flex;
+    margin-right: 300px;
+}
+
+.time img{
+    height: 20px;
+}
+.timetext{
+    color: hsl(215, 51%, 70%);
+    margin-left: 7px;
+    font-weight: 3600;
+}
+
+.creator{
+    /* margin-left: 300px; */
+    display: flex;
+    margin-top: 40px;
+
+}
+
+.creator img{
+    margin-left: 349px;
+    margin-right: 10px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.creator h4{
+    margin-top: 5px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.creator a{
+    text-decoration: none;
+    transition: 0.5s;
+    color:white;
+}
+
+.creator a:hover{
+    color: hsl(178, 100%, 50%);
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+*{margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background: hsl(217, 54%, 11%);
+}
+
+.all{
     height: 510px;
     background: hsl(216, 50%, 16%);
     padding: 30px;
@@ -25,8 +190,9 @@ body{
 }
 
 .container {
+    border-radius: 10px;
     position: relative;
-    width: 50%;
+    width: 100%;
   }
 
   .container:hover .main {
@@ -35,6 +201,7 @@ body{
   }
 
   .view {
+      border-radius: 10px;
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -63,8 +230,10 @@ body{
 
 
 .all h2{
+    font-size:x-large;
     font-weight: 400;
     margin-top: 20px;
+    margin-left: 0;
     color: hsl(0, 0%, 100%);
     transition: 0.5s;
 }
@@ -74,6 +243,7 @@ body{
     cursor: pointer;
 }
 .discription{
+    margin-left: 0;
     line-height: 25px;
     margin-top: 10px;
     color: hsla(0, 0%, 100%, 0.575);
@@ -97,6 +267,9 @@ body{
 
 .price{
     display: flex;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .pricetext{
@@ -107,6 +280,7 @@ body{
 
 .time{
     display: flex;
+    margin: 0;
 }
 
 .time img{
@@ -119,7 +293,9 @@ body{
 }
 
 .creator{
-    display: flex;
+    /* display: flex; */
+    margin-left:-350px;
+    margin-top: 0;
 }
 
 .creator img{
@@ -144,4 +320,5 @@ body{
 .creator a:hover{
     color: hsl(178, 100%, 50%);
 
+}
 }
